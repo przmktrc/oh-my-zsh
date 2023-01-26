@@ -1,7 +1,7 @@
 RETURN_STATUS_COLOR="%{$fg[blue]%}"
-# [[ $? = 0 ]] && RETURN_STATUS_COLOR="%{$fg[green]%}" || RETURN_STATUS_COLOR="%{$fg[red]%}"
+[[ $(whoami) = "root" ]] && USERNAME_COLOR="%{$fg_bold[red]%}" || USERNAME_COLOR="%{$fg_bold[green]%}"
 
-PROMPT=$'%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%D{[%X]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} %{%{$RETURN_STATUS_COLOR%}[$?]%{$reset_color%}%} $(git_prompt_info)\
+PROMPT=$'%{$USERNAME_COLOR%}%n@%m %{$fg[blue]%}%D{[%X]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} %{%{$RETURN_STATUS_COLOR%}[$?]%{$reset_color%}%} $(git_prompt_info)\
 %{$fg[blue]%}->%{$fg_bold[blue]%} %#%{$reset_color%} '
 
 
