@@ -8,5 +8,3 @@ I have also included a [.zshrc](.zshrc) to be copied to $HOME.
 
 ## License
 Both the oh-my-zsh and this fork is licensed under the [MIT License](LICENSE.txt).
-
-.
