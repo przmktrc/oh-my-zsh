@@ -3,3 +3,5 @@
 alias vsc='codium'
 
 alias cs='du -sh *'
+
+alias bl='bluetoothctl'
